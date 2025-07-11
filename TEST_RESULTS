@@ -1,0 +1,8 @@
+# Directories
+**/artifacts
+**/cache
+**/node_modules
+**/typechain-types
+
+# Generated files
+**/coverage
