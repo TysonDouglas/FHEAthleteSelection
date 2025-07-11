@@ -1,16 +1,23 @@
-# Anonymous Athlete Selection System
+# FHE Anonymous Athlete Selection - Privacy-Preserving Sports Talent Selection
 
-[![Test Suite](https://github.com/YOUR_USERNAME/YOUR_REPO/workflows/Test%20Suite/badge.svg)](https://github.com/YOUR_USERNAME/YOUR_REPO/actions)
-[![Code Quality](https://github.com/YOUR_USERNAME/YOUR_REPO/workflows/Code%20Quality/badge.svg)](https://github.com/YOUR_USERNAME/YOUR_REPO/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Hardhat](https://img.shields.io/badge/Built%20with-Hardhat-yellow)](https://hardhat.org/)
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.24-blue)](https://soliditylang.org/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/TysonDouglas/FHEAthleteSelection)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://fhe-athlete-selection.vercel.app/)
 
 A privacy-preserving sports talent selection platform built on Fully Homomorphic Encryption (FHE) technology, enabling fair and confidential athlete evaluation processes.
 
-## 🎯 Core Concept
+## 🔗 Quick Links
 
-The Anonymous Athlete Selection System leverages **Fully Homomorphic Encryption (FHE)** to revolutionize the sports talent selection process. This innovative platform allows selection committees and evaluators to assess athletes based on their performance metrics, fitness levels, and experience—all while keeping sensitive personal data completely encrypted and private.
+- 🌐 **Live Application**: [https://fhe-athlete-selection.vercel.app/](https://fhe-athlete-selection.vercel.app/)
+- 📂 **GitHub Repository**: [https://github.com/TysonDouglas/FHEAthleteSelection](https://github.com/TysonDouglas/FHEAthleteSelection)
+- 📹 **Demo Video**: Download `demo.mp4` from the repository to watch the full demonstration
+- 🔗 **Smart Contract**: [0x88F346E27fb2425E11723938643EF698e6e547DC](https://sepolia.etherscan.io/address/0x88F346E27fb2425E11723938643EF698e6e547DC) (Sepolia Testnet)
+
+## 🎯 Core Concept: FHE Contract for Anonymous Athlete Selection
+
+The Anonymous Athlete Selection System leverages **Fully Homomorphic Encryption (FHE)** to revolutionize the sports talent selection process. This innovative FHE smart contract platform allows selection committees and evaluators to assess athletes based on their performance metrics, fitness levels, and experience—all while keeping sensitive personal data completely encrypted and private on-chain.
 
 ### Key Innovation: FHE-Powered Privacy
 
@@ -80,8 +87,8 @@ Traditional athlete selection processes often expose sensitive personal informat
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd anonymous-athlete-selection
+git clone https://github.com/TysonDouglas/FHEAthleteSelection.git
+cd FHEAthleteSelection
 
 # Install dependencies
 npm install
@@ -179,19 +186,23 @@ npm run interact
 ## 📂 Project Structure
 
 ```
-anonymous-athlete-selection/
+FHEAthleteSelection/
 ├── contracts/
-│   └── AnonymousAthleteSelection.sol   # Main smart contract
+│   └── AnonymousAthleteSelection.sol   # Main FHE smart contract
 ├── scripts/
 │   ├── deploy.js                       # Deployment script
-│   ├── verify.js                       # Verification script
-│   ├── interact.js                     # Interaction script
-│   └── simulate.js                     # Simulation script
-├── test/                               # Test files
+│   ├── verify.js                       # Etherscan verification script
+│   ├── interact.js                     # Contract interaction script
+│   ├── simulate.js                     # End-to-end simulation
+│   ├── security-audit.js               # Security audit tools
+│   └── performance-test.js             # Performance testing
+├── test/                               # Comprehensive test suite
 ├── deployments/                        # Deployment information
+├── .github/workflows/                  # CI/CD workflows
 ├── hardhat.config.js                   # Hardhat configuration
 ├── .env.example                        # Environment variables template
 ├── package.json                        # Project dependencies
+├── demo.mp4                            # Video demonstration
 └── README.md                          # This file
 ```
 
@@ -257,16 +268,34 @@ All evaluations occur on encrypted data, preserving athlete privacy throughout t
 
 ### Live Demo
 
-🌐 **Website**: [https://anonymous-athlete-selection.vercel.app/](https://anonymous-athlete-selection.vercel.app/)
+🌐 **Website**: [https://fhe-athlete-selection.vercel.app/](https://fhe-athlete-selection.vercel.app/)
+
+Explore the live application to experience:
+- Interactive athlete registration with encrypted data
+- Committee management dashboard
+- Evaluator assessment interface
+- Real-time blockchain interaction
+- Complete selection workflow
 
 ### Video Demonstration
 
-📹 A comprehensive video walkthrough is available in the repository (`AnonymousAthleteSelection.mp4`), showcasing:
-- Wallet connection and setup
-- Athlete registration process
-- Committee management functions
-- Evaluator assessment workflow
-- Selection finalization
+📹 **Download the demo video to watch**: `demo.mp4` file in the repository
+
+The comprehensive video walkthrough showcases:
+- Wallet connection and setup process
+- Athlete registration with FHE encryption
+- Committee management and selection initialization
+- Authorized evaluator assessment workflow
+- Selection finalization and results
+- Privacy-preserving features in action
+
+**Note**: Download the `demo.mp4` file from the repository to view the complete demonstration.
+
+### GitHub Repository
+
+📂 **Source Code**: [https://github.com/TysonDouglas/FHEAthleteSelection](https://github.com/TysonDouglas/FHEAthleteSelection)
+
+Access the complete source code, documentation, and project files.
 
 ## 🔐 Privacy & Security Features
 
@@ -422,6 +451,17 @@ We welcome contributions from the community! Whether you're interested in:
 
 Feel free to submit issues and pull requests.
 
+## 🌐 Access the Application
+
+### Live Demo
+Visit the live application: [https://fhe-athlete-selection.vercel.app/](https://fhe-athlete-selection.vercel.app/)
+
+### GitHub Repository
+Access the source code: [https://github.com/TysonDouglas/FHEAthleteSelection](https://github.com/TysonDouglas/FHEAthleteSelection)
+
+### Video Demonstration
+Download `demo.mp4` from the repository to view a comprehensive walkthrough of all features and functionality.
+
 ## 📞 Support & Community
 
 Join our community to discuss privacy-preserving sports technology:
@@ -430,8 +470,37 @@ Join our community to discuss privacy-preserving sports technology:
 - Collaborate on improvements
 - Stay updated on developments
 
+### Get Started
+1. Visit [https://fhe-athlete-selection.vercel.app/](https://fhe-athlete-selection.vercel.app/)
+2. Connect your wallet
+3. Explore the privacy-preserving athlete selection system
+4. Download and watch `demo.mp4` for a complete tutorial
+
+---
+
+## 🎓 What is FHE (Fully Homomorphic Encryption)?
+
+Fully Homomorphic Encryption (FHE) is a revolutionary cryptographic technique that allows computations to be performed directly on encrypted data without decrypting it first. This enables:
+
+- **Complete Privacy**: Data remains encrypted at all times
+- **Secure Computation**: Process sensitive information without exposure
+- **Verifiable Results**: Cryptographic proof of correct computation
+- **Regulatory Compliance**: Meet privacy standards like GDPR
+
+### FHE in This Project
+
+Our FHE smart contract enables:
+- Athletes to register with **encrypted performance data**
+- Evaluators to assess **without seeing actual values**
+- Selection decisions based on **encrypted computations**
+- Results that are **verifiable yet private**
+
+This is the **first privacy-preserving athlete selection system** using FHE technology on blockchain.
+
 ---
 
 **Built with ❤️ for a fairer, more private future in sports**
 
 *Empowering athletes through privacy. Ensuring fairness through cryptography.*
+
+**Powered by Fully Homomorphic Encryption (FHE) - The Future of Privacy-Preserving Blockchain Applications**
