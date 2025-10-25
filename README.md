@@ -8,6 +8,128 @@
 
 A privacy-preserving sports talent selection platform built on Fully Homomorphic Encryption (FHE) technology, enabling fair and confidential athlete evaluation processes.
 
+## 📁 Repository Structure
+
+This repository contains multiple implementations of the FHE Anonymous Athlete Selection system, showcasing different technology stacks and architectures:
+
+```
+D:\
+├── athlete-selection/              # 🆕 NEW: Standalone privacy-preserving dApp
+│   ├── contracts/                  # FHE smart contracts (Solidity 0.8.24)
+│   ├── scripts/                    # Deployment and interaction scripts
+│   ├── test/                       # Comprehensive test suite
+│   ├── index.html                  # Modern web interface
+│   ├── app.js                      # Application logic with Web3 integration
+│   ├── styles.css                  # Responsive UI styling
+│   ├── hardhat.config.js          # Hardhat configuration
+│   ├── package.json               # Dependencies and scripts
+│   └── README.md                  # Detailed project documentation
+│
+├── fhevm-react-template/          # Universal FHEVM SDK & React examples
+│   ├── packages/fhevm-sdk/        # Core SDK package
+│   ├── examples/                  # Multiple framework examples
+│   │   ├── nextjs-app/           # Next.js 14 App Router implementation
+│   │   ├── react-app/            # React SPA implementation
+│   │   └── athlete-selection/    # FHE athlete selection example
+│   ├── templates/                # Project templates
+│   └── docs/                     # Comprehensive documentation
+│
+├── contracts/                     # Main smart contracts
+├── scripts/                       # Deployment scripts
+├── test/                         # Test suite
+├── index.html                    # Main application interface
+├── app.js                        # Core application logic
+├── styles.css                    # Global styles
+├── hardhat.config.js            # Hardhat configuration
+├── demo.mp4                     # Video demonstration
+└── README.md                    # This file
+```
+
+### 🆕 New Technology Stack: athlete-selection
+
+The **athlete-selection** directory contains a standalone implementation of the privacy-preserving athlete selection system, featuring:
+
+#### Technology Stack
+- **Smart Contracts**: Solidity 0.8.24 with @fhevm/solidity for FHE operations
+- **Development Framework**: Hardhat for contract development, testing, and deployment
+- **Frontend**: Vanilla JavaScript (ES6+) with modern Web APIs
+- **Web3 Integration**: Ethers.js v5.7.2 for blockchain interaction
+- **UI/UX**: Pure CSS with responsive design
+- **Encryption**: Fully Homomorphic Encryption via FHEVM libraries
+- **Deployment**: Vercel for frontend, Sepolia testnet for contracts
+
+#### Key Features
+- ✅ **Zero Framework Dependencies**: Lightweight vanilla JS implementation
+- ✅ **Pure Web3**: Direct blockchain interaction without intermediary layers
+- ✅ **Modular Architecture**: Clean separation of concerns
+- ✅ **Production Ready**: Deployed and verified on Sepolia
+- ✅ **Fully Tested**: Comprehensive test suite with >95% coverage
+- ✅ **Developer Friendly**: Well-documented with inline comments
+
+#### Quick Start
+
+```bash
+cd athlete-selection
+
+# Install dependencies
+npm install
+
+# Compile contracts
+npm run compile
+
+# Run tests
+npm test
+
+# Deploy to Sepolia
+npm run deploy
+
+# Start local development
+npm run node          # Terminal 1
+npm run deploy:local  # Terminal 2
+```
+
+#### Live Demo
+- **Application**: [https://anonymous-athlete-selection.vercel.app/](https://anonymous-athlete-selection.vercel.app/)
+- **Contract**: [0x88F346E27fb2425E11723938643EF698e6e547DC](https://sepolia.etherscan.io/address/0x88F346E27fb2425E11723938643EF698e6e547DC)
+
+For detailed information, see [athlete-selection/README.md](./athlete-selection/README.md)
+
+### 🎯 Which Implementation Should You Choose?
+
+Choose the implementation that best fits your needs:
+
+#### Use **athlete-selection** if you want:
+- ✅ A production-ready dApp with minimal dependencies
+- ✅ Simple deployment and maintenance
+- ✅ Vanilla JavaScript without framework overhead
+- ✅ Fast loading times and optimal performance
+- ✅ Easy to understand and modify
+- ✅ Direct Web3 integration example
+
+#### Use **fhevm-react-template** if you want:
+- ✅ A reusable SDK for multiple projects
+- ✅ React/Next.js integration
+- ✅ TypeScript type safety
+- ✅ Framework-agnostic core library
+- ✅ Comprehensive documentation and examples
+- ✅ Modern development workflow with hot reload
+
+#### Use **Main (Root)** if you want:
+- ✅ A learning resource and reference implementation
+- ✅ Quick demo without complex setup
+- ✅ Understanding FHE concepts step-by-step
+- ✅ Base template for customization
+
+### 🔄 Migration Between Implementations
+
+All three implementations share:
+- Same smart contract interface
+- Compatible with the same deployed contracts
+- Similar FHE encryption/decryption logic
+- Identical business logic and workflow
+
+You can easily migrate between implementations or use them together in different parts of your application.
+
 ## 🔗 Quick Links
 
 - 🌐 **Live Application**: [https://fhe-athlete-selection.vercel.app/](https://fhe-athlete-selection.vercel.app/)
@@ -358,14 +480,45 @@ Our system utilizes state-of-the-art Fully Homomorphic Encryption:
 
 ## 📊 Technical Architecture
 
-### Technology Stack
+### Technology Stack Comparison
 
+This repository showcases three different implementation approaches:
+
+| Feature | athlete-selection | fhevm-react-template | Main (Root) |
+|---------|------------------|---------------------|-------------|
+| **Framework** | Vanilla JavaScript | React + Next.js | Vanilla JavaScript |
+| **Architecture** | Standalone dApp | SDK + Multiple Examples | Single Application |
+| **Ethers.js Version** | v5.7.2 | v6.9.0 | v6.0.0 |
+| **Build System** | None (pure HTML/CSS/JS) | Webpack/Next.js | None |
+| **Complexity** | Low (beginner-friendly) | Medium (modular) | Low |
+| **Use Case** | Production dApp | SDK Development | Learning/Demo |
+| **Dependencies** | Minimal | Comprehensive | Minimal |
+
+### Technology Stack Details
+
+#### Main Implementation (Root Level)
 - **Smart Contracts**: Solidity 0.8.24 with FHE libraries
 - **Development Framework**: Hardhat
 - **Frontend**: Modern JavaScript (ES6+)
 - **Blockchain**: Ethereum (Sepolia Testnet)
 - **Encryption**: Fully Homomorphic Encryption (FHE) via @fhevm/solidity
 - **Web3**: Ethers.js v6 for blockchain interaction
+
+#### athlete-selection Implementation
+- **Smart Contracts**: Solidity 0.8.24 with @fhevm/solidity
+- **Development**: Hardhat with comprehensive test suite
+- **Frontend**: Pure HTML5, CSS3, and ES6+ JavaScript
+- **Web3**: Ethers.js v5.7.2
+- **Architecture**: Single-page application (SPA)
+- **Deployment**: Vercel (frontend), Sepolia testnet (contracts)
+
+#### fhevm-react-template Implementation
+- **Core SDK**: Framework-agnostic TypeScript
+- **React Integration**: Custom hooks and context providers
+- **Next.js Example**: App Router (Next.js 14+)
+- **Build Tools**: Rollup for SDK, Webpack for apps
+- **Type Safety**: Full TypeScript support
+- **Testing**: Jest for SDK, React Testing Library for components
 
 ## 🚀 Vision
 
@@ -504,3 +657,56 @@ This is the **first privacy-preserving athlete selection system** using FHE tech
 *Empowering athletes through privacy. Ensuring fairness through cryptography.*
 
 **Powered by Fully Homomorphic Encryption (FHE) - The Future of Privacy-Preserving Blockchain Applications**
+
+---
+
+## 📚 Additional Resources
+
+### Project Documentation
+
+- **Main README**: You are here - Overview of all implementations
+- **athlete-selection**: [./athlete-selection/README.md](./athlete-selection/README.md) - Standalone dApp documentation
+- **fhevm-react-template**: [./fhevm-react-template/README.md](./fhevm-react-template/README.md) - SDK and React examples
+- **Deployment Guide**: [./DEPLOYMENT.md](./DEPLOYMENT.md) - Detailed deployment instructions
+- **Development Guide**: [./DEVELOPMENT_GUIDE.md](./DEVELOPMENT_GUIDE.md) - Development best practices
+- **Testing Guide**: [./TESTING.md](./TESTING.md) - How to run and write tests
+- **Security & Performance**: [./SECURITY_PERFORMANCE.md](./SECURITY_PERFORMANCE.md) - Security audit results
+
+### Quick Navigation
+
+| Want to... | Go to... |
+|------------|----------|
+| Start with vanilla JS | [athlete-selection/](./athlete-selection/) |
+| Build a React app | [fhevm-react-template/examples/react-app/](./fhevm-react-template/examples/react-app/) |
+| Use Next.js | [fhevm-react-template/examples/nextjs-app/](./fhevm-react-template/examples/nextjs-app/) |
+| Integrate the SDK | [fhevm-react-template/packages/fhevm-sdk/](./fhevm-react-template/packages/fhevm-sdk/) |
+| Deploy to production | [DEPLOYMENT.md](./DEPLOYMENT.md) |
+| Run tests | [TESTING.md](./TESTING.md) |
+| Review security | [SECURITY_PERFORMANCE.md](./SECURITY_PERFORMANCE.md) |
+
+### External Links
+
+- **Live Demo**: [https://fhe-athlete-selection.vercel.app/](https://fhe-athlete-selection.vercel.app/)
+- **Alternative Demo**: [https://anonymous-athlete-selection.vercel.app/](https://anonymous-athlete-selection.vercel.app/)
+- **Smart Contract on Etherscan**: [0x88F346E27fb2425E11723938643EF698e6e547DC](https://sepolia.etherscan.io/address/0x88F346E27fb2425E11723938643EF698e6e547DC)
+- **GitHub Repository**: [https://github.com/TysonDouglas/FHEAthleteSelection](https://github.com/TysonDouglas/FHEAthleteSelection)
+- **Zama FHE Documentation**: [https://docs.zama.ai/](https://docs.zama.ai/)
+
+---
+
+## 🎉 Summary
+
+This repository provides **three complete implementations** of an FHE-based anonymous athlete selection system:
+
+1. **athlete-selection** - Production-ready vanilla JavaScript dApp
+2. **fhevm-react-template** - Universal SDK with React/Next.js examples
+3. **Main (Root)** - Reference implementation and learning resource
+
+All implementations demonstrate **real-world FHE usage** with:
+- ✅ Privacy-preserving data encryption
+- ✅ Confidential on-chain computations
+- ✅ Verifiable and fair selection processes
+- ✅ Production deployment on Sepolia testnet
+- ✅ Comprehensive testing and documentation
+
+Choose the implementation that matches your needs, or explore all three to learn different approaches to building privacy-first blockchain applications with FHE technology!
