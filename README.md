@@ -8,6 +8,18 @@
 
 A privacy-preserving sports talent selection platform built on Fully Homomorphic Encryption (FHE) technology, enabling fair and confidential athlete evaluation processes.
 
+#### Live Demo
+- **Application**: [https://anonymous-athlete-selection.vercel.app/](https://anonymous-athlete-selection.vercel.app/)
+- 🌐 **Live Application**: [https://fhe-athlete-selection.vercel.app/](https://fhe-athlete-selection.vercel.app/)
+- 📹 **Demo Video**: Download `demo.mp4` from the repository to watch the full demonstration
+- 🔗 **Smart Contract**: [0x88F346E27fb2425E11723938643EF698e6e547DC](https://sepolia.etherscan.io/address/0x88F346E27fb2425E11723938643EF698e6e547DC) (Sepolia Testnet)
+
+For detailed information, see [athlete-selection/README.md](./athlete-selection/README.md)
+
+ 
+
+
+
 ## 📁 Repository Structure
 
 This repository contains multiple implementations of the FHE Anonymous Athlete Selection system, showcasing different technology stacks and architectures:
@@ -130,12 +142,7 @@ All three implementations share:
 
 You can easily migrate between implementations or use them together in different parts of your application.
 
-## 🔗 Quick Links
 
-- 🌐 **Live Application**: [https://fhe-athlete-selection.vercel.app/](https://fhe-athlete-selection.vercel.app/)
-- 📂 **GitHub Repository**: [https://github.com/TysonDouglas/FHEAthleteSelection](https://github.com/TysonDouglas/FHEAthleteSelection)
-- 📹 **Demo Video**: Download `demo.mp4` from the repository to watch the full demonstration
-- 🔗 **Smart Contract**: [0x88F346E27fb2425E11723938643EF698e6e547DC](https://sepolia.etherscan.io/address/0x88F346E27fb2425E11723938643EF698e6e547DC) (Sepolia Testnet)
 
 ## 🎯 Core Concept: FHE Contract for Anonymous Athlete Selection
 
